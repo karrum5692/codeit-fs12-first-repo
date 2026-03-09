@@ -279,6 +279,8 @@ function deleteEntry(id) {
     diary.splice(delent, 1);
     renderAllEntries();
   }
+
+  renderAllEntries();
 }
 
 // ============================================
