@@ -63,7 +63,7 @@ function addTodo() {
 
   // ⑥ todoList에 li 추가하기
   // todoList.appendChild(...)
-
+  todoList.appendChild(li);
   // ⑦ 입력창 비우기
   todoInput.value = "";
 
