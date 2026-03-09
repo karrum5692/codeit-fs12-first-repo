@@ -278,9 +278,8 @@ function deleteEntry(id) {
   if (delent !== -1) {
     diary.splice(delent, 1);
     renderAllEntries();
+    renderStats();
   }
-
-  renderAllEntries();
 }
 
 // ============================================
