@@ -330,6 +330,7 @@ function handleSubmit(e) {
   }
   clearForm();
   renderAllEntries();
+  renderStats();
 }
 
 // 7-3. 이벤트 리스너 등록
@@ -373,6 +374,11 @@ function getDiaryStats() {
       moods[mood] = 1;
     }
   });
+
+  return {
+    total: diary.length,
+    moods: moods,
+  };
 }
 
 // 8-2. 통계를 화면에 그리기
